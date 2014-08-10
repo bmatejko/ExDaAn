@@ -1,3 +1,13 @@
+#Downloading dataset
+
+baza <- read.csv("F:/exdata-data-household_power_consumption/household_power_consumption.txt", sep=";")
+
+# Preparing variables
+
+baza$Date[66637:69516] # date from 1/1/2007 to 2/1/2007
+baza<-baza[66637:69516,]
+
+
 par(mfrow=c(2,2))
 #plot1
 
